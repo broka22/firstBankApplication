@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,16 +24,15 @@
 						name=password>
 				</div>
 				<div>
-					<br>
-					<input type="submit" value=submit>
+					<br> <input type="submit" value=submit>
 				</div>
 			</form>
 		</div>
 
 		<h4>
 			Not an User?
-			<form action="user_signUp" method="post">
-				<a href="signUp">Sign Up</a>
+			<!-- <form action="user_signUp" method="post"> -->
+			<a href="user_signUp">Sign Up</a>
 		</h4>
 </body>
 </html>

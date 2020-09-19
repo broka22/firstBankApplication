@@ -9,7 +9,7 @@
 <body>
 	<h1>Enter your details to open an account</h1>
 	<div>
-		<form action="user_save" method="post">
+		<form action="user_welcome" method="post">
 			<div>
 				<label>User Name</label> 
 				<input type="text" name="userName">

@@ -43,4 +43,9 @@ public class UserSeriviceImpl implements UserService {
 		
 	}
 
+	@Override
+	public User getUserById(int id) {
+		return userRepository.getUserById(id);
+	}
+
 }

@@ -6,6 +6,8 @@ public interface UserRepository {
 	
 	void signUp(User user);
 	
+	User getUserById(int id);
+	
 	void createAccount();
 	
 	void depositAmount();

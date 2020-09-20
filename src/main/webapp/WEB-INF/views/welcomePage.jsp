@@ -24,6 +24,10 @@
 						name=password>
 				</div>
 				<div>
+					<label><br>ID</label> <input type="number"
+						name=id>
+				</div> 
+				<div>
 					<br> <input type="submit" value=submit>
 				</div>
 			</form>

@@ -17,19 +17,34 @@
 			<div>
 				<label>Set up Password</label> 
 				<input type="password" name="password">
-			</div><div>
+			</div>
+			<div>
 				<label>Email</label> 
 				<input type="email" name="email">
-			</div><div>
+			</div>
+			<div>
 				<label>Mobile No</label> 
 				<input type="number" name="mobileNo">
-			</div><div>
+			</div>
+			<div>
 				<label>SSN</label> 
 				<input type="number" name="ssn">
 			</div>
+<!-- 			<div>
+				<label>Deposit Amount</label> 
+				<input type="number" name="depositAmount">
+			</div>
+			<div>
+				<label>Withdraw Amount</label> 
+				<input type="number" name="withdrawAmount">
+			</div>
+			<div>
+				<label>Check Balance</label> 
+				<input type="number" name="checkBalance">
+			</div> -->
 			<div>
 				<input type="submit" name="submit">
-			</div>
+			</div> 
 		</form>
 	</div>
 

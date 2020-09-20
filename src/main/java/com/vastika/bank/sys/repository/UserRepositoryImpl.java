@@ -1,11 +1,23 @@
 package com.vastika.bank.sys.repository;
 
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.vastika.bank.sys.model.User;
+import com.vastika.bank.sys.util.HibernateUtil;
+
+@Repository
 public class UserRepositoryImpl implements UserRepository {
+	
+	@Autowired
+	private SessionFactory sessionFactory;
 
 	@Override
-	public void signUp() {
-		// TODO Auto-generated method stub
-		
+	public void signUp(User user) {
+		Session session = HibernateUtil.getSession(sessionFactory);
+		session.save(user);
 	}
 
 	@Override

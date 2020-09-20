@@ -1,8 +1,10 @@
 package com.vastika.bank.sys.repository;
 
+import com.vastika.bank.sys.model.User;
+
 public interface UserRepository {
 	
-	void signUp();
+	void signUp(User user);
 	
 	void createAccount();
 	

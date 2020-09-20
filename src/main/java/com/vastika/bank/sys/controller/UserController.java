@@ -2,16 +2,18 @@ package com.vastika.bank.sys.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.vastika.bank.sys.model.User;
 import com.vastika.bank.sys.service.UserService;
 
 @Controller
 public class UserController {
 	
-//	@Autowired
+	@Autowired
 	private UserService userService;
 
 	@RequestMapping(value = "/")
@@ -37,6 +39,12 @@ public class UserController {
 	@RequestMapping(value="/user_signOut")
 	public String userLogOut() {
 		return "logOutPage";
+	}
+	
+	@RequestMapping(value="/user_save", method = RequestMethod.POST)
+	public String saveUserInfo(@ModelAttribute User user) {
+		userService.signUp(user);
+		return "redirect:/user_welcome";
 	}
 	
 }

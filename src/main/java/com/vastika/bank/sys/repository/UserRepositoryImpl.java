@@ -44,4 +44,11 @@ public class UserRepositoryImpl implements UserRepository {
 		
 	}
 
+	@Override
+	public User getUserById(int id) {
+		Session session = HibernateUtil.getSession(sessionFactory);
+		User user = (User) session.get(User.class, id);
+		return user;
+	}
+
 }

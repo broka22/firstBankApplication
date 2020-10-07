@@ -1,6 +1,5 @@
 package com.vastika.bank.sys.model;
 
-import javax.annotation.Generated;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -25,7 +24,7 @@ public class AccountInfo {
 	@Column(name="withdraw_amount")
 	private int withdrawAmount;
 	
-	@Column(name="check_balance")
-	private int checkBalance;
+	@Column(name="current_balance")
+	private int currentBalance;
 
 }

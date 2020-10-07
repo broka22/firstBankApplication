@@ -7,6 +7,8 @@
 <title>Sign Up</title>
 </head>
 <body>
+
+<div align="center">
 	<h1>Enter your details to open an account</h1>
 	<div>
 		<form action="user_save" method="post">
@@ -43,11 +45,10 @@
 				<input type="number" name="checkBalance">
 			</div> -->
 			<div>
-				<input type="submit" name="submit">
+				<input type="submit" value="Submit">
 			</div> 
 		</form>
 	</div>
-
-
+</div>
 </body>
 </html>

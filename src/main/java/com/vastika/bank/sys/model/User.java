@@ -32,4 +32,7 @@ public class User {
 	@OneToOne(cascade = CascadeType.ALL)
 	private AccountInfo accountInfo;
 
+	@OneToOne(cascade = CascadeType.MERGE)
+	private Role role;
+
 }

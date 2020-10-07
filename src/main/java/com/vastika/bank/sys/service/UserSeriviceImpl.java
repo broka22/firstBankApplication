@@ -7,6 +7,8 @@ import org.springframework.transaction.annotation.Transactional;
 import com.vastika.bank.sys.model.User;
 import com.vastika.bank.sys.repository.UserRepository;
 
+import java.util.List;
+
 @Service
 @Transactional
 public class UserSeriviceImpl implements UserService {
@@ -38,7 +40,7 @@ public class UserSeriviceImpl implements UserService {
 	}
 
 	@Override
-	public void checkBalance() {
+	public void currentBalance() {
 		// TODO Auto-generated method stub
 		
 	}
@@ -46,6 +48,11 @@ public class UserSeriviceImpl implements UserService {
 	@Override
 	public User getUserById(int id) {
 		return userRepository.getUserById(id);
+	}
+
+	@Override
+	public List<User> getAllUser() {
+		return userRepository.getAllUser();
 	}
 
 }
